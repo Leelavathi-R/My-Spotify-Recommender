@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mood-Based Song Recommendations</title>
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='images/bg.png') }}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            color:black;
+            display: flex;
+        }
+        h1{
+            color:white;
+        }
+        .content{
+            padding: 50px;
+            text-align: center;
+            margin-left: 32%;
+            margin-top: 5%;
+        }
+        form{
+            background: rgba(255, 255, 255, 0.8); /* Slight white background for readability */
+            padding: 50px;
+            border-radius: 10px;
+            text-align: center;
+            display: flex;
+            width: 300px; 
+            height: 200px;
+            flex-direction: column;
+            align-items: center;
+        }
+        label, select, button {
+            margin: 10px 0;
+            width: 80%; 
+            font-size: 15px;
+        }
+        button {
+            margin-top: 20px; 
+            height: 50px;
+            width: 55%;
+            background-color: rgb(83, 221, 111);
+            font-size: 15px;
+            border-radius: 5px;
+            border:none;
+            color: black;
+            cursor: pointer;
+            padding: 5px;
+            font-weight: bold;
+        }
+        h3{
+            margin-top: 1px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class = "content">
+        <img src="{{ url_for('static', filename='images/spotify-client.svg') }}" alt="Your Image">
+        <h1>My Spotify - Recommendation</h1>
+        <form action="/recommend" method="POST">
+            <h3>(Personalized Mood-Based Song Recommendation)</h3>
+            <select id="mood" name="mood" required>
+                <option value="" disabled selected>Select your mood</option>
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="energetic">Energetic</option>
+                <option value="calm">Calm</option>
+                <option value="romantic">Romantic</option>
+            </select>
+            <button type="submit">Get Recommendations</button>
+        </form>
+    </div>
+</body>
+</html>
+
+

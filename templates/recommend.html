@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recommendations</title>
+</head>
+<body>
+    <h1>Mood: {{ mood }}</h1>
+    
+    <h2>Recommended Tracks:</h2>
+    <ul>
+        {% for track in recommendations %}
+            <li>{{ track['name'] }} - {{ track['artists'][0]['name'] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
