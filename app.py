@@ -60,7 +60,7 @@ def recommend():
     mood = request.form['mood']
     top_tracks = spotify.current_user_top_tracks(limit=20)
     print([track['name'] for track in top_tracks['items']])
-    
+
     with open('./lyrics.json', 'r') as file:
         lyrics_data = json.load(file)
 
@@ -76,4 +76,4 @@ def recommend():
 
 if __name__ == '__main__':
     app.run(debug=True)
-    print(recommend())
+    
