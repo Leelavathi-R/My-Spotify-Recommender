@@ -5,6 +5,7 @@ My Spotify Recommendation is a web service that suggests 5 mood-based tracks and
 ## Requirements
 * python >= 3.0
 * spotipy
+* flask
 * Spotify developer credentials
 * cohere developer credentials
 * up-to-date lyrics dataset
