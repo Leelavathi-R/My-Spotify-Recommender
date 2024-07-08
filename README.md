@@ -12,3 +12,13 @@ My Spotify Recommendation is a web service that suggests 5 mood-based tracks and
 ## Demo:
 User input page:
 ![Demo](results/img1.png)
+
+Selecting 'Happy' tracks:
+![Demo](results/img2.png)
+![Demo](results/img3.png)
+
+Recommended 'Happy' tracks:
+![Demo](results/img4.png)
+
+Playlist added to my Spotify:
+![Demo](results/img5.png)
