@@ -1,6 +1,6 @@
 <h1 align="center">My Spotify Recommendation</h1>
 
-My Spotify Recommendation is a web service that suggests 5 mood-based tracks and automatically creates a playlist with those tracks in my account based on my listening history which has been collected using the [Spotify API](https://developer.spotify.com/). Track moods are determined using the [Cohere API](https://cohere.com/), and the service recommends mood-based songs similar to the tracks that match the user-given mood.
+My Spotify Recommendation is a web service that suggests 5 mood-based tracks and automatically creates a playlist with those tracks in my account based on my listening history, collected using the [Spotify API](https://developer.spotify.com/). Tracks' moods are determined using the [Cohere API](https://cohere.com/), allowing the service to recommend mood-based songs similar to those that match a user-given mood.
 
 ## Requirements
 * python >= 3.0
